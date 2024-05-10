@@ -2,7 +2,7 @@ export const styles = {
     headerBlock:{
         background: 'white',
         width: '100vw',
-        height: '100vh',
+        height: '188px',
         display: 'flex',
     },
 
@@ -10,7 +10,8 @@ export const styles = {
         display: "flex",
         marginRight:"116px",
         marginTop:"71px",
-        marginLeft:"1302px"
+        marginLeft:"1302px",
+        marginBottom: "38px"
     },
 
     text:{
@@ -43,6 +44,7 @@ export const styles = {
         flexShrink: "0",
         cursor: "pointer",
         marginTop:"65px",
-        marginLeft:"30px"
+        marginLeft:"30px",
+        marginBottom: "38px",
     }
 }

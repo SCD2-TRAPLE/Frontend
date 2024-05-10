@@ -3,7 +3,9 @@ import React from 'react';
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { SearchContentProvider } from './Context';
-import Main from 'src/Main';
+import Main from './Main';
+import PlaceSelect from './PlaceSelect';
+import Header from './Header';
 function App() {
   return (
     <>
@@ -12,6 +14,7 @@ function App() {
           <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
               <Route path="/" element={<Main />} />
+              <Route path="/placeSelect" element={<PlaceSelect />} />
             </Routes>
           </BrowserRouter>
         </div>

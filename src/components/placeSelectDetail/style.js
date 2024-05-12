@@ -7,7 +7,7 @@ export const styles = {
         flexDirection: "column"
       },
       title:{
-        marginTop: '5px',
+        marginTop: '0px',
         display: "flex",
         marginLeft:"94px",
         width: "783px",

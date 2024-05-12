@@ -10,7 +10,7 @@ import photo2 from "./photo2.svg";
 import photo3 from "./photo3.svg";
 function PlaceSelect() {
     const navigate = useNavigate();
-    const photos = [photo1,photo2,photo3,photo1];
+    const photos = [photo1,photo2,photo3,photo1,photo2,photo3,photo1,photo2,photo3];
     const regions = ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원']; // 일단 임시적으로 지역명 배열
     const [hoveredIndex, setHoveredIndex] = useState(null); // 호버된 버튼의 인덱스를 저장
 

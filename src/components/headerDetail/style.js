@@ -2,7 +2,7 @@ export const styles = {
     headerBlock:{
         background: 'white',
         width: '100vw',
-        height: '188px',
+        height: '150px',
         display: 'flex',
     },
 

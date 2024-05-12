@@ -6,8 +6,15 @@ export const styles = {
       display: 'flex',
       flexDirection: "column"
     },
+    img:{
+      width: "268px",
+      height: "328px",
+      flexShrink: "0",
+      margin:"15px 78px 0px 78px"
+    },
+
     nextBtn:{
-        marginTop:"35px",
+        marginTop:"60px",
         marginLeft:"40%",
         width: "320px",
         height: "80px",

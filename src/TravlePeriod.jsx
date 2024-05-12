@@ -15,7 +15,9 @@ function TravlePeriod() {
             <Header/>
             <div style={styles.container}>
                 <div>
-                    <h1 style={styles.title}>여행기간을<br />선택해 주세요 📅</h1>
+                    <div style={styles.title}>여행기간을<br />선택해 주세요 📅</div>
+                    <div style={styles.subtitle1}>*선택 가능한 여행 기간은 최대 10일입니다.</div>
+                    <div style={styles.subtitle2}>양양은 6~8월이 성수기, 1~2 월이 비수기</div>
                 </div>
                 <div>
                     <button onClick={handleNext} style={styles.nextBtn}>다음</button>

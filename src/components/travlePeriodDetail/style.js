@@ -7,8 +7,8 @@ export const styles = {
       flexDirection: "column"
     },
     nextBtn:{
-        marginTop:"35px",
-        marginLeft:"40%",
+        marginTop:"400px",
+        marginLeft:"65%",
         width: "320px",
         height: "80px",
         flexShrink: '0',
@@ -33,7 +33,6 @@ export const styles = {
         marginTop: '0px',
         display: "flex",
         marginLeft:"94px",
-        width: "783px",
         flexShrink: "0",
         color: "#000",
         fontFamily: "Inter",
@@ -42,4 +41,35 @@ export const styles = {
         fontWeight: "700",
         lineHeight: "normal"
       },
+      side:{
+        marginLeft: "960px",
+        width: "960px",
+        height: "100%",
+        flexShrink: "0",
+        background: "rgba(243, 136, 122, 0.20)"
+      },
+      subtitle1:{
+        marginTop:"20px",
+        marginLeft:"94px",
+        color: "#000",
+        fontFamily: "Inter",
+        fontSize: "20px",
+        fontStyle: "normal",
+        fontWeight: "500",
+        lineHeight: "normal"
+      },
+      subtitle2:{
+        marginTop:"10px",
+        marginLeft:"94px",
+        color: "#F3887A",
+        fontFamily: "Inter",
+        fontSize: "20px",
+        fontStyle: "normal",
+        fontWeight: "500",
+        lineHeight: "normal",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        flexShrink: "0"
+      }
 }

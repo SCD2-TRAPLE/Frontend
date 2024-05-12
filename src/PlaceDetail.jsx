@@ -41,7 +41,7 @@ function PlaceDetail() {
                 </div>  
 
                 <div style={{ display: 'flex', alignItems: 'center', marginLeft: "94px", marginTop: '20px' }}>
-                    <h5 style={{ color: "#E87169", fontFamily: "Inter", fontSize: "28px", fontStyle: "normal", fontWeight: "700", lineHeight: "normal", margin: '0px' }}>
+                    <h5 style={{ color: "#E87169", fontFamily: "Inter", fontSize: "28px", fontStyle: "normal", fontWeight: "400", lineHeight: "normal", margin: '0px' }}>
                         가볍게 둘러보기
                     </h5>
                     <img src={line} style={{ marginLeft: "5px" }} alt="line"></img>

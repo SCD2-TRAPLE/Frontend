@@ -35,7 +35,7 @@ export const styles = {
         fontFamily: "Inter",
         fontSize: "28px",
         fontStyle: "normal",
-        fontWeight: "700",
+        fontWeight: "400",
         lineHeight: "normal",
         // width: "65%",
         height: "63px",
@@ -49,5 +49,32 @@ export const styles = {
         width: '18%', // 5개가 한 줄에 배치되도록 너비 조정 (100% / 5 = 20%, 여백을 고려하여 조금 줄임)
         marginBottom: '20px',
         cursor:"pointer"
+      },
+      infoBox:{
+        position: "absolute", 
+        margin: "20px 25px 0px 25px" //이미지 호버시에 상세설명 나오는 창 (아직 미완성)
+      },
+      nextBtn:{
+        marginTop:"35px",
+        marginLeft:"40%",
+        width: "320px",
+        height: "80px",
+        flexShrink: '0',
+        display: "flex",
+        justifyContent: "center",
+        flexShrink: "0",
+        color: "#FFF",
+        textAlign: "center",
+        alignItems: 'center',
+        fontFamily: "Inter",
+        fontSize: "30px",
+        fontStyle: "normal",
+        fontWeight: "700",
+        lineHeight: "normal",
+        cursor:"pointer",
+        background: "#F3887A",
+        filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+        border:"none",
+        borderRadius:"30px"
       }
 }

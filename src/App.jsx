@@ -8,6 +8,9 @@ import PlaceSelect from './PlaceSelect';
 import PlaceDetail from './PlaceDetail';
 import Header from './Header';
 import ImageSlider from './ImageSlider';
+import TravlePeriod from './TravlePeriod';
+import CompanionSelect from './CompanionSelect';
+import Concept from './Concept';
 function App() {
   return (
     <>
@@ -18,6 +21,9 @@ function App() {
               <Route path="/" element={<Main />} />
               <Route path="/placeSelect" element={<PlaceSelect />} />
               <Route path="/placeDetail" element={<PlaceDetail />} />
+              <Route path="/travlePeriod" element={<TravlePeriod />} />
+              <Route path="/companionSelect" element={<CompanionSelect />} />
+              <Route path="/concept" element={<Concept />} />
             </Routes>
           </BrowserRouter>
         </div>

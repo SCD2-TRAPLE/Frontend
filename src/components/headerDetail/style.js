@@ -3,18 +3,19 @@ export const styles = {
         background: 'white',
         width: '100vw',
         height: '150px',
-        display: 'flex',
+        display: 'flex'
     },
 
     step:{
         display: "flex",
         marginRight:"116px",
-        marginTop:"71px",
+        marginTop:"30px",
         marginLeft:"1302px",
         marginBottom: "38px"
     },
 
     text:{
+        marginTop:"0px",
         width: "126px",
         height: "39px",
         color: "#000",
@@ -25,6 +26,7 @@ export const styles = {
         lineHeight: "normal",
     },
     text2:{
+        marginTop:"0px",
         width: "172px",
         height: "39px",
         color: "#F3887A",
@@ -43,7 +45,7 @@ export const styles = {
         height: "50px",
         flexShrink: "0",
         cursor: "pointer",
-        marginTop:"65px",
+        marginTop:"30px",
         marginLeft:"30px",
         marginBottom: "38px",
     }

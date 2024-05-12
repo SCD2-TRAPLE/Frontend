@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { SearchContentProvider } from './Context';
 import Main from './Main';
 import PlaceSelect from './PlaceSelect';
+import PlaceDetail from './PlaceDetail';
 import Header from './Header';
 import ImageSlider from './ImageSlider';
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path="/placeSelect" element={<PlaceSelect />} />
+              <Route path="/placeDetail" element={<PlaceDetail />} />
             </Routes>
           </BrowserRouter>
         </div>

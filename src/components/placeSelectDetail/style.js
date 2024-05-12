@@ -7,7 +7,7 @@ export const styles = {
         flexDirection: "column"
       },
       title:{
-        marginTop: '10px',
+        marginTop: '5px',
         display: "flex",
         marginLeft:"94px",
         width: "783px",
@@ -23,7 +23,7 @@ export const styles = {
         width: "65%",
         height: "144px",
         flexShrink: "0",
-        marginTop: '38px',
+        marginTop: '10px',
         marginLeft:"auto",
         marginRight:"auto",
         display: "flex",
@@ -31,6 +31,12 @@ export const styles = {
         justifyContent: 'space-between'
       },
       regionBox:{
+        color: "#F3887A",
+        fontFamily: "Inter",
+        fontSize: "28px",
+        fontStyle: "normal",
+        fontWeight: "700",
+        lineHeight: "normal",
         // width: "65%",
         height: "63px",
         flexShrink: "0",

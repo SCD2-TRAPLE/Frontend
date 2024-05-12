@@ -6,6 +6,7 @@ import { SearchContentProvider } from './Context';
 import Main from './Main';
 import PlaceSelect from './PlaceSelect';
 import Header from './Header';
+import ImageSlider from './ImageSlider';
 function App() {
   return (
     <>

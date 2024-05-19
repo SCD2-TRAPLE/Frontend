@@ -15,6 +15,7 @@ import Communitycard from './Communitycard';
 import Header2 from './Header2';
 import Trapplebox from './Trapplebox';
 import Travlog from './Travlog';
+import VlogDetail from './VlogDetail';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="/companionSelect" element={<CompanionSelect />} />
               <Route path="/concept" element={<Concept />} />
               <Route path="/travlog" element={<Travlog />} />
+              <Route path="/vlogDetail" element={<VlogDetail />} />
             </Routes>
           </BrowserRouter>
         </div>

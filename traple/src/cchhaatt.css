@@ -1,0 +1,11 @@
+.modal-overlay{
+    background-color: white;
+}
+
+.modal-content{
+    top : 50%;
+    left : 50%;
+    right : auto;
+    bottom : auto;
+    margin-right : -50%;
+}

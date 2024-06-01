@@ -16,7 +16,10 @@ import Header2 from './Header2';
 import Trapplebox from './Trapplebox';
 import Travlog from './Travlog';
 import VlogDetail from './VlogDetail';
-
+import Login from './Login';
+import Nickname from './Nickname';
+import Profile from './Profile';
+import Auth from './Auth';
 function App() {
   return (
     <>
@@ -24,7 +27,10 @@ function App() {
         <div>
           <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
-              <Route path="/" element={<Main />} />
+              <Route path="/" element={<Login />} />
+              <Route path="/main" element={<Main />} />
+              <Route path="/nickname" element={<Nickname />} />
+              <Route path="/profile" element={<Profile />} />
               <Route path="/placeSelect" element={<PlaceSelect />} />
               <Route path="/placeDetail" element={<PlaceDetail />} />
               <Route path="/travlePeriod" element={<TravlePeriod />} />
@@ -32,6 +38,8 @@ function App() {
               <Route path="/concept" element={<Concept />} />
               <Route path="/travlog" element={<Travlog />} />
               <Route path="/vlogDetail" element={<VlogDetail />} />
+              <Route path="/auth/kakao/login" element={<Auth />} />
+              <Route path="*" element={<Nickname />} />
             </Routes>
           </BrowserRouter>
         </div>

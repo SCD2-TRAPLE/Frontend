@@ -9,7 +9,7 @@ function Header(){
     const navigate = useNavigate();
   
     const BackBtn = () => {
-      navigate('/'); // 메인페이지로 이동
+      navigate('/placeSelect'); // 메인페이지로 이동
     };
   
     const handleMouseEnter = () => {

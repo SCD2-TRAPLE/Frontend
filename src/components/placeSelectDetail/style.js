@@ -37,7 +37,6 @@ export const styles = {
         fontStyle: "normal",
         fontWeight: "400",
         lineHeight: "normal",
-        // width: "65%",
         height: "63px",
         flexShrink: "0",
         borderRadius: "40px",

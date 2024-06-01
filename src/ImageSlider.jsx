@@ -34,7 +34,7 @@ function ImageSlider({ photos }) {
   return (
   <div
       ref={sliderRef}
-      style={{ display: 'flex', marginTop: "40px", width: "100%", overflow: 'hidden' }}>
+      style={{ display: 'flex', marginTop: "70px", width: "100%", overflow: 'hidden' }}>
       {photos.map((photo, index) => (
       <div
           key={index}

@@ -38,7 +38,7 @@ function PlaceSelect() {
     const [selectedRegion, setSelectedRegion] = useState(null);
     const [clickedIndex, setClickedIndex] = useState(null);
     const [hoveredPhotoIndex, setHoveredPhotoIndex] = useState(null); 
-
+    const [currentStep, setCurrentStep] = useState(1); // 현재 단계 상태 추가
     const handleRegionClick = (region, index) => {
         if (selectedRegion === region) {
             setSelectedRegion(null);

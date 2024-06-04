@@ -9,7 +9,7 @@ function TravlePeriod() {
     const handleNext = () => {
         navigate("/AiPlanner"); //다음 페이지로 이동
     };
-
+    const [currentStep, setCurrentStep] = useState(4); // 현재 단계 상태 추가
     return(
         <div>
             <Header/>

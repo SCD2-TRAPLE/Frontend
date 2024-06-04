@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg'; 
+import logo2 from './logo2.svg'; 
 
 export default function Header2() {
   return (
     <div>
-      <img src={logo} alt="logo" className="logo"/>
+      <img src={logo2} alt="logo" className="logo"/>
       <nav>
         <ul>
           <li className="menu1">플래너</li>

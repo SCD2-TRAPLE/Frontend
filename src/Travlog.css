@@ -1,3 +1,4 @@
+/* 어선영 코드인데 뭘 쓸 수 있을지 모르겠음 ㅎㅎ */
 html {
     background: white;
     font-family: 'Roboto', sans-serif;
@@ -15,12 +16,12 @@ html {
     flex-direction: column;
   }
   
-  /* .logo {
+  .logo2 {
     display: inline-block;
     position: absolute;
     top: 28px;
     left: 50px;
-  } */
+  }
   
   nav {
     display: inline-block;

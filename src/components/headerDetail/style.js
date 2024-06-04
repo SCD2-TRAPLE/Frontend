@@ -48,5 +48,41 @@ export const styles = {
         marginTop:"30px",
         marginLeft:"30px",
         marginBottom: "38px",
-    }
+    },
+    headerBlock2: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        backgroundColor: '#ffffff',
+        padding: '10px 20px',
+      },
+      logoButton: {
+        cursor:"pointer",
+        marginLeft:"20px",
+        border: 'none',
+        backgroundColor: 'transparent',
+        padding: 0,
+      },
+      navLinks: {
+        alignItems: 'center',
+        marginLeft: "90px",
+        display: 'flex',
+        gap: '100px',
+      },
+      loginButton: {
+        cursor:"pointer",
+        marginTop:"40px",
+        marginLeft: 'auto',
+        marginRight:"20px"
+      },
+      linkStyle: (isHovered) => ({
+        textDecoration: isHovered ? 'underline' : 'none',
+        cursor: 'pointer',
+        color: isHovered ? '#337FED' : '#000000',
+        fontFamily: 'Pretendard',
+        fontSize: '22px',
+        fontStyle: 'normal',
+        fontWeight: 500,
+        lineHeight: 'normal',
+      }),
 }

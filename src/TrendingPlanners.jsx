@@ -103,6 +103,7 @@ const styles = {
         gap: "20px",
     },
     image: {
+        cursor: "pointer",
         // width: "400px",
         // height: "300px",
         objectFit: "cover",

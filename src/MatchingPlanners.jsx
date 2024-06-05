@@ -94,6 +94,7 @@ const styles = {
         overflow: 'hidden', // 이미지가 부모 요소를 벗어나지 않도록 설정
       },
     image: {
+        cursor: 'pointer',
         width: '100%',
         height: 'auto',
         // width: "400px",

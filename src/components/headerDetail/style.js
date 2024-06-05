@@ -10,7 +10,7 @@ export const styles = {
         display: "flex",
         marginRight:"116px",
         marginTop:"30px",
-        marginLeft:"1302px",
+        marginLeft:"840px",
         marginBottom: "38px"
     },
 
@@ -48,6 +48,14 @@ export const styles = {
         marginTop:"30px",
         marginLeft:"30px",
         marginBottom: "38px",
+    },
+    logo:{
+      alignItems: 'center',
+      justifyContent: 'center',
+      cursor: "pointer",
+      marginTop:"28px",
+      marginLeft:"60px",
+      marginBottom: "38px",
     },
     headerBlock2: {
         display: 'flex',

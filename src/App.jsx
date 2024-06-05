@@ -5,9 +5,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { SearchContentProvider } from './Context';
 import Main from './Main';
 import PlaceSelect from './PlaceSelect';
+import PlaceSelectMain from './PlaceSelectMain';
 import PlaceDetail from './PlaceDetail';
+import PlaceDetail2 from './PlaceDetail2';
 import ImageSlider from './ImageSlider';
 import TravlePeriod from './TravlePeriod';
+import PlannerVehicle from './PlannerVehicle';
 import CompanionSelect from './CompanionSelect';
 import Concept from './Concept';
 import Communitycard from './Communitycard';
@@ -29,10 +32,18 @@ function App() {
               <Route path="/main" element={<Main />} />
               <Route path="/nickname" element={<Nickname />} />
               <Route path="/profile" element={<Profile />} />
+              {/* 지도있는 메인 플래너 설문시작 */}
+              <Route path="/placeSelect-main" element={<PlaceSelectMain />} /> 
+              {/* 강원도 */}
+              <Route path="/placeDetail-do" element={<PlaceDetail />} />
+              {/* 포천 */}
+              <Route path="/placeDetail-si" element={<PlaceDetail2 />} />
+              {/* 목록으로보기 */}
               <Route path="/placeSelect" element={<PlaceSelect />} />
-              <Route path="/placeDetail" element={<PlaceDetail />} />
               <Route path="/travlePeriod" element={<TravlePeriod />} />
               <Route path="/companionSelect" element={<CompanionSelect />} />
+              {/* 이동방법 선택 */}
+              <Route path="/vehicleSelect" element={<PlannerVehicle />} />
               <Route path="/concept" element={<Concept />} />
               <Route path="/travlog" element={<Travlog />} />
               <Route path="/vlogDetail" element={<VlogDetail />} />

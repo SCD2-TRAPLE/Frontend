@@ -2,15 +2,24 @@ export const styles = {
     container: {
         background: 'white',
         width: '100vw',
+        // height: '100vh',
+        display: 'flex',
+        justifyContent: 'space-between', // 양 끝에 요소 배치
+      },
+      container2: {
+        background: 'white',
+        width: '100vw',
         height: '100vh',
+        display: 'flex',
         display: 'flex',
         flexDirection: "column"
       },
       title:{
-        marginTop: '0px',
+        marginTop: '80px',
+        marginLeft:"140px",
         display: "flex",
         marginLeft:"94px",
-        width: "783px",
+        // width: "783px",
         flexShrink: "0",
         color: "#000",
         fontFamily: "Inter",
@@ -20,32 +29,33 @@ export const styles = {
         lineHeight: "normal"
       },
       box:{
-        width: "65%",
-        height: "144px",
+        display: 'grid',
+        gridTemplateColumns: 'repeat(7, 1fr)', // 7행로 표시
+        gridGap: '10px', // 그리드 아이템 사이 간격
+        width: "70%",
         flexShrink: "0",
-        marginTop: '10px',
         marginLeft:"auto",
         marginRight:"auto",
-        display: "flex",
         flexWrap: 'wrap',
         justifyContent: 'space-between'
       },
       regionBox:{
-        color: "#F3887A",
+        color: "#337FED",
         fontFamily: "Inter",
         fontSize: "28px",
+        width: "180px",
+        height: "55px",
         fontStyle: "normal",
         fontWeight: "400",
         lineHeight: "normal",
-        height: "63px",
         flexShrink: "0",
         borderRadius: "40px",
-        border: "2px solid #F3887A",
+        border: "2px solid #337FED",
         background: "rgba(255, 255, 255, 0.50)",
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
-        width: '18%', // 5개가 한 줄에 배치되도록 너비 조정 (100% / 5 = 20%, 여백을 고려하여 조금 줄임)
+        // width: '18%', // 5개가 한 줄에 배치되도록 너비 조정 (100% / 5 = 20%, 여백을 고려하여 조금 줄임)
         marginBottom: '20px',
         cursor:"pointer"
       },
@@ -54,26 +64,60 @@ export const styles = {
         margin: "20px 25px 0px 25px" //이미지 호버시에 상세설명 나오는 창 (아직 미완성)
       },
       nextBtn:{
-        marginTop:"35px",
-        marginLeft:"40%",
-        width: "320px",
-        height: "80px",
+        width: "200px",
+        height: "65px",
         flexShrink: '0',
         display: "flex",
         justifyContent: "center",
-        flexShrink: "0",
         color: "#FFF",
         textAlign: "center",
         alignItems: 'center',
         fontFamily: "Inter",
-        fontSize: "30px",
+        fontSize: "27px",
         fontStyle: "normal",
         fontWeight: "700",
         lineHeight: "normal",
         cursor:"pointer",
-        background: "#F3887A",
+        background: "#337FED",
         filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
         border:"none",
-        borderRadius:"30px"
-      }
+        borderRadius:"70px"
+      },
+      map:{
+        cursor: "pointer",
+        marginRight:"140px",
+        marginRight:"10px"
+      },
+      map2:{
+        marginRight:"140px",
+        marginRight:"10px"
+      },
+      imageContainer:{
+        marginLeft:"714px",
+        marginTop:"-500px"
+      },
+      imageContainer2:{
+        marginLeft:"690px",
+        marginTop:"-300px",
+        flexDirection:"column",
+        display:"flex"
+      },
+      btnContainer:{
+        display:"flex",
+        marginLeft:"1450px",
+        marginTop:"50px"
+      },
+      btnContainer2:{
+        display:"flex",
+        marginLeft:"1450px",
+        marginTop:"90px"
+      },
+      listView: {
+        cursor: 'pointer',
+        transition: 'color 0.3s ease', // 부드러운 색상 변화 효과
+    },
+    listViewHover: {
+        color: '#337FED',
+        textDecoration: 'underline',
+    },
 }

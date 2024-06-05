@@ -115,7 +115,7 @@ function Main() {
                         </motion.div>
                     </div>
                     <div>
-                        <img src={Line_31} style={{marginTop:"100px"}}></img>
+                        <img src={Line_31} style={{marginTop:"170px"}}></img>
                         <div style={{marginTop:"10px ", alignItems: 'center', marginLeft:"100px", display:"flex", marginBottom:"100px"}}>          전체서비스          |          이용약관          |          개인정보처리방침          |          고객센터          <span style={{marginRight:"100px"}}>(주)TRAPLE</span></div>
                     </div>
                     <div>

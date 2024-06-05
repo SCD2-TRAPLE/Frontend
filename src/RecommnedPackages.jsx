@@ -9,7 +9,7 @@ import r1 from "./r1.svg";
 import r2 from "./r2.svg";
 import r3 from "./r3.svg";
 import r4 from "./r4.svg";
-
+import "./style.css";
 const images = [
     [r1, r2, r3, r4],
     [r4, r3, r2, r1]
@@ -39,6 +39,7 @@ function BestPlanner() {
               >
                 <img
                   src={image}
+                  className="chat-img"
                   style={styles.image}
                   alt={`planner-${index}`}
                 />
@@ -93,9 +94,11 @@ const styles = {
     imageWrapper: {
         width: '23%', // 이미지가 균등하게 배치되도록 너비 설정
         position: 'relative',
-        overflow: 'hidden', // 이미지가 부모 요소를 벗어나지 않도록 설정
+        // overflow: 'hidden', // 이미지가 부모 요소를 벗어나지 않도록 설정
       },
     image: {
+        cursor: 'pointer',
+        zIndex:"9999",
         width: '100%',
         height: 'auto',
         // width: "400px",

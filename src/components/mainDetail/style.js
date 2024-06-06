@@ -1,5 +1,4 @@
 import homeImg from "../../homeImg.svg";
-import menuBox from "../../menuBox.svg";
 export const styles = {
     container: {
         background: 'white',
@@ -39,11 +38,6 @@ export const styles = {
         fontWeight: '400',
         lineHeight: 'normal',
         color: 'var(--c2, #F2F7FA)',
-      },
-      menuBox:{
-        marginTop:"48px", 
-        marginLeft:"980px",
-        backgroundImage: `url(${menuBox})`
       },
       button:{
         position:"absolute",

@@ -6,6 +6,8 @@ import { styles } from "./components/mainDetail/style";
 import TrendingPlanners from "./TrendingPlanners";
 import MatchingPlanners from "./MatchingPlanners";
 import RecommnedPackages from "./RecommnedPackages";
+import HomeTravlog from "./HomeTravlog";
+import HomeInfo from "./HomeInfo";
 import HomeHeader from "./HomeHeader";
 import alarmBtn from "./alarmBtn.svg";
 import homeImg from "./homeImg.svg";
@@ -88,7 +90,7 @@ function Main() {
         <div>
             <HomeHeader />
             <div className="home-screen" style={styles.container}>
-                <div id="main-title" style={{ backgroundImage: `url(${homeImg})`, backgroundRepeat: 'no-repeat' }}>
+            <div id="main-title" style={{ backgroundImage: `url(${homeImg})`, backgroundRepeat: 'no-repeat' }}>
                     <div style={styles.mainText}>
                         기분좋은 여행의<br />첫 걸음, Traple 🏝️
                     </div>
@@ -168,22 +170,22 @@ function Main() {
                             <RecommnedPackages />
                         </motion.div>
                     </div>
-                    {/* <div id="recommended-homeInfo" ref={travlogRef} data-controls="homeInfo">
+                    <div id="recommended-homeInfo" ref={homeInfoRef} data-controls="homeInfo">
                         <motion.div
                             initial="hidden"
                             animate={homeInfoControls}
                             variants={sectionVariants}>
                             <HomeInfo />
                         </motion.div>
-                    </div> */}
-                    {/* <div id="recommended-travlog" ref={travlogRef} data-controls="travlog">
+                    </div>
+                    <div id="recommended-travlog" ref={travlogRef} data-controls="travlog">
                         <motion.div
                             initial="hidden"
                             animate={travlogControls}
                             variants={sectionVariants}>
                             <HomeTravlog />
                         </motion.div>
-                    </div> */}
+                    </div>
                     <div>
                         <img src={Line_31} style={{marginTop:"170px"}}></img>
                         <div style={{marginTop:"10px ", alignItems: 'center', marginLeft:"100px", display:"flex", marginBottom:"20px"}}>전체서비스|이용약관|개인정보처리방침|고객센터<span style={{marginLeft:"1150px"}}>(주)TRAPLE</span></div>
@@ -207,3 +209,4 @@ function Main() {
 }
 
 export default Main;
+

@@ -6,9 +6,9 @@ import { styles } from './components/headerDetail/style';
 import { useNavigate } from 'react-router-dom';
 import logo from "./logo2.svg";
 
-function Header() {
+function Header({ currentStep }) {
     const [isHovered, setIsHovered] = useState(false);
-    const [currentStep, setCurrentStep] = useState(1); // 현재 단계 상태 추가
+    // const [currentStep, setCurrentStep] = useState(1); // 현재 단계 상태 추가
     const navigate = useNavigate();
 
     const BackBtn = () => {
@@ -25,7 +25,7 @@ function Header() {
 
     // 단계별 색상을 다르게 하는 함수
     const getStepColor = (step) => {
-        return currentStep >= step ? "#0538FF" : "black"; // 현재 단계보다 크거나 같으면 주색상, 아니면 회색
+        return currentStep == step ? "black" : "#67A4FD"; // 현재 단계보다 크거나 같으면 #0538FF, 아니면 회색
     };
 
     return (

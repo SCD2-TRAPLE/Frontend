@@ -33,7 +33,7 @@ function PlaceSelectMain() {
     };
     return(
         <div>
-            <Header/>
+            <Header currentStep={currentStep}/>
             <div style={styles.container2}>
                 <div>
                     <img src={Smap} alt="map" style={styles.map2} />

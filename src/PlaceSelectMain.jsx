@@ -16,13 +16,13 @@ function PlaceSelectMain() {
 
     return(
         <div>
-            <Header/>
+            <Header currentStep={currentStep}/>
             <div style={styles.container}>
                 <div>
                     <h1 style={styles.title}>가고 싶은, 관심 있는<br />여행지를 선택해주세요 !</h1>
                     <span style={{  color: "#949494", 
                                     fontFamily: "Inter",
-                                    fontSize: "30px",
+                                    fontSize: "20px",
                                     fontStyle: "normal",
                                     fontWeight: 400,
                                     marginTop:"50px",

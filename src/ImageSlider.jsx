@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-
+import "./img.css";
 function ImageSlider({ photos }) {
   const sliderRef = useRef(null);
 
@@ -34,7 +34,7 @@ function ImageSlider({ photos }) {
   return (
   <div
       ref={sliderRef}
-      style={{ display: 'flex', marginTop: "70px", width: "100%", overflow: 'hidden' }}>
+      style={{ display: 'flex', width: "100%", overflow: 'hidden' }}>
       {photos.map((photo, index) => (
       <div
           key={index}
@@ -44,7 +44,7 @@ function ImageSlider({ photos }) {
           transition: 'transform 1s ease',
           margin: index !== 0 ? "0px 20px 0px 20px" : undefined // 첫 번째 자식이 아닌 경우에만 margin을 적용
           }}>
-          <img src={photo} style={{ width: '100%', height: '100%' }} alt={`Slide ${index}`} />
+          <img src={photo} style={{ width: '100%', height: '100%' }} alt={`Slide ${index}`} className="slider-image"/>
       </div>
     ))}
   </div>

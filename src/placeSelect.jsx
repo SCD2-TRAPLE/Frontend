@@ -15,50 +15,48 @@ import pd13 from "./pd13.svg";
 
 function PlaceSelect() {
     const navigate = useNavigate();
-    const commonPhotos = [pd9, pd10, pd11, pd12, pd13, pd9, pd10, pd11, pd12, pd13, pd9, pd10, pd11, pd12, pd13];
+    const commonPhotos = [pd9, pd10, pd11, pd12, pd13, pd9, pd10, pd11, pd12, pd13, pd9, pd10, pd11, pd12, pd13, pd9, pd10, pd11, pd12, pd13];
     const regionBox = [
         "전체", "광명", "군포", "부천", "성남", "수원", "시흥", "안산", "안성", "안양", "양평", "여주", "오산", "용인", "의왕", "이천", "평택", "하남", "화성", "과천"
     ];
+    const [currentStep, setCurrentStep] = useState(1); // 현재 단계 상태 추가
+    const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [clickedIndex, setClickedIndex] = useState([]);
+    const [selectedRegion, setSelectedRegion] = useState(null); 
+
     const handleRegionClick = (region, index) => {
         if (clickedIndex.includes(index)) {
-            // 이미 선택된 지역을 다시 클릭한 경우, 선택 해제
             const newClickedIndex = clickedIndex.filter(i => i !== index);
             setClickedIndex(newClickedIndex);
-            
-            // 선택 해제 후 선택된 지역이 없다면, selectedRegion을 null로 설정
             if (newClickedIndex.length === 0) {
                 setSelectedRegion(null);
             }
         } else {
-            // 지역을 처음 클릭한 경우, 해당 지역을 선택 상태로 설정
             setClickedIndex([...clickedIndex, index]);
             setSelectedRegion(region);
-            }
+        }
     };
-    const [hoveredIndex, setHoveredIndex] = useState(null);
-    const [clickedIndex, setClickedIndex] = useState([]);
-    const [selectedRegion, setSelectedRegion] = useState(null); 
-    const [hoveredPhotoIndex, setHoveredPhotoIndex] = useState(null); 
-    const [currentStep, setCurrentStep] = useState(1); // 현재 단계 상태 추가
 
     const handleNext = () => {
-        navigate("/travlePeriod"); //다음 페이지로 이동
+        if (clickedIndex.length > 0) {
+            navigate("/travlePeriod");
+        }
     };
 
     return (
         <div>
-            <Header />
+            <Header currentStep={currentStep}/>
             <div style={styles.container2}>
                 <div style={{display:"flex"}}>
                     <h1 style={styles.title}>경기도 <span style={{
-                          color: "#949494", // CSS 변수 대신 기본값 사용
+                          color: "#949494",
                           fontFamily: "Inter",
                           fontSize: "20px",
                           fontStyle: "normal",
                           fontWeight: "400",
                           lineHeight: "normal",
-                          marginLeft:"50px,",
-                          marginTop:"18px"
+                          marginTop:"18px",
+                          marginLeft:"50px"
                     }}>※ 여행할 도시를 선택하세요! (다중 선택 가능, 취소하려면 다시 클릭)</span></h1>
                 </div>
 
@@ -80,51 +78,32 @@ function PlaceSelect() {
                     ))}
                 </div>
 
-                {!selectedRegion && (
-                    <>
-                        <div style={{ display: 'flex', alignItems: 'center', marginLeft: "94px", marginTop: '20px' }}>
-                            <h5 style={{ color: "#67A4FD", fontFamily: "Inter", fontSize: "28px", fontStyle: "normal", fontWeight: "400", lineHeight: "normal", margin: '0px' }}>
-                                가볍게 둘러보기
-                            </h5>
-                            <img src={line} style={{ marginLeft: "5px" }} alt="line"></img>
-                            <img src={icon1} style={{ marginLeft: "5px" }} alt="icon1"></img>
-                            <img src={icon2} style={{ marginLeft: "5px" }} alt="icon2"></img>
-                        </div>
-                        <ImageSlider photos={commonPhotos}></ImageSlider>
-                        <div>
-                            <button onClick={handleNext} style={styles.nextBtn}>다음</button>
-                        </div>
-                    </>
-                )}
-                {/* {selectedRegion && (
-                    <>
-                        <div style={{ display: 'flex', alignItems: 'center', marginLeft: "94px", marginTop: '20px' }}>
-                            <h5 style={{ color: "#E87169", fontFamily: "Inter", fontSize: "28px", fontStyle: "normal", fontWeight: "400", lineHeight: "normal", margin: '0px' }}>
-                                가볍게 둘러보기
-                            </h5>
-                            <img src={line} style={{ marginLeft: "5px" }} alt="line"></img>
-                            <img src={icon1} style={{ marginLeft: "5px" }} alt="icon1"></img>
-                            <img src={icon2} style={{ marginLeft: "5px" }} alt="icon2"></img>
-                        </div>
-
-                        <div>
-                            {commonPhotos.map((photo, index) => (
-                                <img key={index} src={photo}
-                                    style={{ margin: "20px 25px 0px 25px" }}
-                                    alt="region"
-                                    onMouseEnter={() => setHoveredPhotoIndex(index)} // 마우스를 올렸을 때
-                                    onMouseLeave={() => setHoveredPhotoIndex(null)} // 마우스를 뗐을 때
-                                />
-                            ))}
-                        </div>
-                        <div>
-                            <button onClick={handleNext} style={styles.nextBtn}>다음</button>
-                        </div>
-                    </>
-                )} */}
+                <div style={{ display: 'flex', alignItems: 'center', marginLeft: "94px"}}>
+                    <h5 style={{ color: "#67A4FD", fontFamily: "Inter", fontSize: "28px", fontStyle: "normal", fontWeight: "400", lineHeight: "normal"}}>
+                        가볍게 둘러보기
+                    </h5>
+                    <img src={line} style={{ marginLeft: "5px" }} alt="line"></img>
+                    <img src={icon1} style={{ marginLeft: "5px" }} alt="icon1"></img>
+                    <img src={icon2} style={{ marginLeft: "5px" }} alt="icon2"></img>
+                </div>
+                <ImageSlider photos={commonPhotos}></ImageSlider>
+                <div style={{marginLeft:"740px", padding:"20px"}}>
+                    <button 
+                        onClick={handleNext} 
+                        style={{
+                            ...styles.nextBtn,
+                            backgroundColor: clickedIndex.length > 0 ? '#337FED' : '#D3D3D3',
+                            cursor: clickedIndex.length > 0 ? 'pointer' : 'not-allowed'
+                        }}
+                        disabled={clickedIndex.length === 0}
+                    >
+                        다음
+                    </button>
+                </div>
             </div>
         </div>
     );
 }
 
 export default PlaceSelect;
+

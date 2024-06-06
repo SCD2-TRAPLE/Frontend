@@ -8,22 +8,18 @@ import companion2 from "./companion2.svg";
 
 function TravlePeriod() {
     const navigate = useNavigate();
-    const handleNext = () => {
-        navigate("/concept"); //다음 페이지로 이동
-    };
     const [isNextButtonActive, setIsNextButtonActive] = useState(false); // 다음 버튼 활성화 상태를 관리하는 상태 추가
     const [currentStep, setCurrentStep] = useState(3); // 현재 단계 상태 추가
     const handleCalendarClick = () => {
         setIsNextButtonActive(true); 
-        navigate("/companionSelect."); 
+        navigate("/plannerTheme"); 
     };
     return(
         <div>
-            <Header/>
-            <div style={styles.container} onClick={handleCalendarClick}>
+            <Header currentStep={currentStep}/>
+            <div style={styles.container2} onClick={handleCalendarClick}>
                 <div style={{marginTop:"800px", marginLeft:"740px"}}>
-                <button style={{...styles.nextBtn, backgroundColor: isNextButtonActive ? styles.nextBtn.backgroundColor : '#949494'}} 
-                    disabled={!isNextButtonActive}>다음</button>
+                <button style={styles.nextBtn}>다음</button>
                 </div>
             </div>
         </div>

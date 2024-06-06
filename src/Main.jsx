@@ -28,7 +28,7 @@ function Main() {
         visible: { opacity: 1, transition: { duration: 0.5 } }
     };
     const handleNext = () => {
-        navigate("/planner"); //다음 페이지로 이동
+        navigate("/placeSelect-main"); //다음 페이지로 이동
     };
 
     const handleChatClick = () => {

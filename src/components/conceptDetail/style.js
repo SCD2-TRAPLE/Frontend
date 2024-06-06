@@ -9,8 +9,8 @@ export const styles = {
     nextBtn:{
         marginTop:"35px",
         marginLeft:"40%",
-        width: "320px",
-        height: "80px",
+        width: "200px",
+        height: "65px",
         flexShrink: '0',
         display: "flex",
         justifyContent: "center",
@@ -24,12 +24,37 @@ export const styles = {
         fontWeight: "700",
         lineHeight: "normal",
         cursor:"pointer",
-        background: "#F3887A",
+        background: "#337FED",
+        filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+        border:"none",
+        borderRadius:"30px"
+      },
+      nextBtn2:{
+        marginTop:"20px",
+        marginBottom:"20px",
+        marginLeft:"58%",
+        width: "200px",
+        height: "65px",
+        flexShrink: '0',
+        display: "flex",
+        justifyContent: "center",
+        flexShrink: "0",
+        color: "#FFF",
+        textAlign: "center",
+        alignItems: 'center',
+        fontFamily: "Inter",
+        fontSize: "30px",
+        fontStyle: "normal",
+        fontWeight: "700",
+        lineHeight: "normal",
+        cursor:"pointer",
+        background: "#337FED",
         filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
         border:"none",
         borderRadius:"30px"
       },
       subtitle:{
+        marginTop:"30px",
         display: "flex",
         marginLeft:"94px",
         flexShrink: "0",
@@ -38,10 +63,10 @@ export const styles = {
         fontSize: "20px",
         fontStyle: "normal",
         fontWeight: "400",
-        lineHeight: "normal"
+        lineHeight: "normal",
+        marginBottom:"50px"
       },
       title:{
-        marginTop: '0px',
         display: "flex",
         marginLeft:"94px",
         flexShrink: "0",
@@ -51,5 +76,28 @@ export const styles = {
         fontStyle: "normal",
         fontWeight: "700",
         lineHeight: "normal"
+      },
+      title2:{
+        display: "flex",
+        marginLeft:"94px",
+        flexShrink: "0",
+        color: "#000",
+        marginTop:"-40px",
+        fontFamily: "Inter",
+        fontSize: "55px",
+        fontStyle: "normal",
+        fontWeight: "700",
+        lineHeight: "normal",
+        marginBottom:"50px"
+      },
+      th:{
+        cursor: "pointer",
+        margin: '0 18px',
+        marginBottom:"100px"
+      },
+      detailBox:{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: 'center',
       }
 }

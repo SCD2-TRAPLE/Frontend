@@ -3,18 +3,13 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; 
 import { styles } from "./components/travlePeriodDetail/style";
 import Header from './Header';
-import calendar from './calendar.svg';
-
-function TravlePeriod() {
+import calendar from './calendar2.svg';
+function TravlePeriod2() {
     const navigate = useNavigate();
-    const [currentStep, setCurrentStep] = useState(2); // 현재 단계 상태를 2로 설정
-    const [isNextButtonActive, setIsNextButtonActive] = useState(false); // 다음 버튼 활성화 상태를 관리하는 상태 추가
-
-    const handleCalendarClick = () => {
-        setIsNextButtonActive(true); // calendar 이미지 클릭 시 다음 버튼 활성화
-        navigate("/travlePeriod2"); // 바로 travlePeriod2 화면으로 넘어가기
+    const handleNext = () => {
+        navigate("/companionSelect"); //다음 페이지로 이동
     };
-
+    const [currentStep, setCurrentStep] = useState(2); // 현재 단계 상태 추가
     return(
         <div>
             <Header currentStep={currentStep}/>
@@ -32,13 +27,11 @@ function TravlePeriod() {
                     </div>
                 </div>
                 <div>
-                    <button style={{...styles.nextBtn, backgroundColor: isNextButtonActive ? styles.nextBtn.backgroundColor : '#949494'}} 
-                    disabled={!isNextButtonActive}>다음</button>
-                    <img src={calendar} onClick={handleCalendarClick} alt="calendar" style={{cursor: 'pointer'}}></img>
+                    <button onClick={handleNext} style={styles.nextBtn}>다음</button>
+                    <img src={calendar}></img>
                 </div>
             </div>
         </div>
     );
 }
-
-export default TravlePeriod;
+export default TravlePeriod2;

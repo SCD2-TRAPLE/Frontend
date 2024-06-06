@@ -2,7 +2,7 @@ export const styles = {
     container: {
         background: 'white',
         width: '100vw',
-        // height: '100vh',
+        height: '100vh',
         display: 'flex',
         justifyContent: 'space-between', // 양 끝에 요소 배치
       },
@@ -15,10 +15,8 @@ export const styles = {
         flexDirection: "column"
       },
       title:{
-        marginTop: '80px',
         marginLeft:"140px",
         display: "flex",
-        marginLeft:"94px",
         // width: "783px",
         flexShrink: "0",
         color: "#000",

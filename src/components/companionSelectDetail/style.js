@@ -1,10 +1,26 @@
+import companion1 from "../../companion1.svg";
+import companion2 from "../../companion2.svg";
+
 export const styles = {
     container: {
       background: 'white',
       width: '100vw',
       height: '100vh',
       display: 'flex',
-      flexDirection: "column"
+      backgroundImage:`url(${companion1})`,
+      flexDirection: "column",
+      backgroundSize: '100%',
+      backgroudRepeat: 'no-repeat'
+    },
+    container2: {
+      background: 'white',
+      width: '100vw',
+      height: '100vh',
+      display: 'flex',
+      backgroundImage:`url(${companion2})`,
+      flexDirection: "column",
+      backgroundSize: '100%',
+      backgroudRepeat: 'no-repeat'
     },
     img:{
       width: "268px",
@@ -12,30 +28,26 @@ export const styles = {
       flexShrink: "0",
       margin:"15px 78px 0px 78px"
     },
-
     nextBtn:{
-        marginTop:"60px",
-        marginLeft:"40%",
-        width: "320px",
-        height: "80px",
-        flexShrink: '0',
-        display: "flex",
-        justifyContent: "center",
-        flexShrink: "0",
-        color: "#FFF",
-        textAlign: "center",
-        alignItems: 'center',
-        fontFamily: "Inter",
-        fontSize: "30px",
-        fontStyle: "normal",
-        fontWeight: "700",
-        lineHeight: "normal",
-        cursor:"pointer",
-        background: "#F3887A",
-        filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-        border:"none",
-        borderRadius:"30px"
-      },
+      width: "200px",
+      height: "65px",
+      flexShrink: '0',
+      display: "flex",
+      justifyContent: "center",
+      color: "#FFF",
+      textAlign: "center",
+      alignItems: 'center',
+      fontFamily: "Inter",
+      fontSize: "27px",
+      fontStyle: "normal",
+      fontWeight: "700",
+      lineHeight: "normal",
+      cursor:"pointer",
+      background: "#337FED",
+      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+      border:"none",
+      borderRadius:"70px"
+    },
       title:{
         marginTop: '0px',
         display: "flex",

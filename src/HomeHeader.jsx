@@ -29,7 +29,7 @@ function HomeHeader() {
       </button>
       <div style={styles.navLinks}>
         <Link
-          to="/planner"
+          to="/placeSelect-main"
           style={styles.linkStyle(hoveredIndex === 0)}
           onMouseEnter={() => handleMouseEnter(0)}
           onMouseLeave={handleMouseLeave}
@@ -58,15 +58,15 @@ function HomeHeader() {
           onMouseEnter={() => handleMouseEnter(3)}
           onMouseLeave={handleMouseLeave}
         >
-          나의일정
+          나의여행
         </Link>
         <Link
-          to="/package"
+          to="/together"
           style={styles.linkStyle(hoveredIndex === 4)}
           onMouseEnter={() => handleMouseEnter(4)}
           onMouseLeave={handleMouseLeave}
         >
-          패키지
+          함께 떠나기
         </Link>
       </div>
       <div style={styles.loginButton}>

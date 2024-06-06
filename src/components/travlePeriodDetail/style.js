@@ -1,16 +1,15 @@
 export const styles = {
     container: {
-      background: 'white',
+      position: 'relative',
+      background:"white",
       width: '100vw',
       height: '100vh',
       display: 'flex',
-      flexDirection: "column"
+      justifyContent: 'space-between', // 양 끝에 요소 배치
     },
     nextBtn:{
-        marginTop:"400px",
-        marginLeft:"65%",
-        width: "320px",
-        height: "80px",
+        width: "200px",
+        height: "65.882px",
         flexShrink: '0',
         display: "flex",
         justifyContent: "center",
@@ -19,20 +18,24 @@ export const styles = {
         textAlign: "center",
         alignItems: 'center',
         fontFamily: "Inter",
-        fontSize: "30px",
+        fontSize: "25px",
         fontStyle: "normal",
         fontWeight: "700",
         lineHeight: "normal",
         cursor:"pointer",
-        background: "#F3887A",
+        background: "#337FED",
         filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
         border:"none",
-        borderRadius:"30px"
+        borderRadius:"70px",
+        position: "absolute", // 또는 "absolute"에 따라 필요에 맞게 선택
+        zIndex: 1000, // 상당히 높은 값으로 다른 요소들보다 위에 위치하도록 설정
+        top: "950px", // 페이지 하단에서 얼마나 떨어져 있을지 설정
+        right: "360px" // 페이지 오른쪽에서 얼마나 떨어져 있을지 설정
       },
       title:{
-        marginTop: '0px',
         display: "flex",
         marginLeft:"94px",
+        marginTop:"25px",
         flexShrink: "0",
         color: "#000",
         fontFamily: "Inter",
@@ -49,25 +52,24 @@ export const styles = {
         background: "rgba(243, 136, 122, 0.20)"
       },
       subtitle1:{
-        marginTop:"20px",
+        marginTop:"40px",
         marginLeft:"94px",
         color: "#000",
         fontFamily: "Inter",
         fontSize: "20px",
         fontStyle: "normal",
-        fontWeight: "500",
+        fontWeight: "400",
         lineHeight: "normal"
       },
       subtitle2:{
-        marginTop:"10px",
-        marginLeft:"94px",
-        color: "#F3887A",
+        marginTop:"20px",
+        marginLeft:"100px",
+        color: "#337FED",
         fontFamily: "Inter",
         fontSize: "20px",
         fontStyle: "normal",
-        fontWeight: "500",
+        fontWeight: "400",
         lineHeight: "normal",
-        display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         flexShrink: "0"

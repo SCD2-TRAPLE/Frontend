@@ -22,10 +22,10 @@ function PlaceSelectMain() {
 
     return(
         <div>
-            <Header/>
+            <Header currentStep={currentStep}/>
             <div style={styles.container2}>
                 <div>
-                    <img src={Dmap} alt="map" style={styles.map} />
+                    <img src={Dmap} alt="map" style={styles.map2} />
                 </div>
                 <div style={styles.imageContainer}>
                     <ImageSlider photos={commonImg}></ImageSlider>

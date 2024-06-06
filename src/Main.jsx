@@ -88,59 +88,17 @@ function Main() {
         <div>
             <HomeHeader />
             <div className="home-screen" style={styles.container}>
-                <div id="main-title" style={{ backgroundImage: `url(${homeImg})`, backgroundRepeat: 'no-repeat' }}>
+                <div id="main-title" style={{ width: '100%', height: '100vh', backgroundImage: `url(${homeImg})`, backgroundRepeat: 'no-repeat' }}>
                     <div style={styles.mainText}>
                         기분좋은 여행의<br />첫 걸음, Traple 🏝️
                     </div>
                     <div style={styles.subText}>
                         AI가 짜주는 최적의 플랜부터 즐거운 여행 동반자까지 모두 Traple과 함께라면 순식간에
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <div style={{
-                            width: "400px",
-                            height: "176px",
-                            flexShrink: "0",
-                            marginTop:"100px",
-                            marginLeft:"201px",
-                            borderRadius: "30px",
-                            background:"#F2F7FA",
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            position: 'relative',
-                            color: '#000',
-                            fontFamily: 'Inter',
-                            fontSize: '22px',
-                            fontStyle: 'normal',
-                            fontWeight: 600,
-                            lineHeight: 'normal',
-                            display: 'flex',
-                            flexDirection: "column"
-                        }}>
-                            생성된 플래너를 확인해보세요!
-                            <button style={{marginTop:"20px",
-                                width: "214px",
-                                height: "46px",
-                                background:"#337FED",
-                                flexShrink: "0",
-                                border:"none",
-                                cursor: "pointer",
-                                borderRadius:"30px",
-                                color: 'var(--c00, #FFF)',
-                                fontFamily: 'Inter',
-                                fontSize: '18px',
-                                fontStyle: 'normal',
-                                fontWeight: 600,
-                                lineHeight: 'normal'}}>Planner 바로가기</button>
-                            <img src={menuBox} style={{
-                                position: 'absolute',
-                                top: '50%',
-                                marginLeft:"1700px",
-                                transform: 'translateY(-50%)'
-                            }} />
-                        </div>
+                    <div style={{ marginTop: "48px", marginLeft: "980px" }}>
+                        <img src={menuBox} />
                     </div>
-                    <div style={{ marginLeft: "1070px", marginBottom:"100px"}}>
+                    <div style={{ marginTop: "-125px", marginLeft: "1133px" }}>
                         <button onClick={handleNext} style={styles.button}>AI Planner 바로 이용하기</button>
                     </div>
 
@@ -186,7 +144,7 @@ function Main() {
                     </div> */}
                     <div>
                         <img src={Line_31} style={{marginTop:"170px"}}></img>
-                        <div style={{marginTop:"10px ", alignItems: 'center', marginLeft:"100px", display:"flex", marginBottom:"20px"}}>전체서비스|이용약관|개인정보처리방침|고객센터<span style={{marginLeft:"1150px"}}>(주)TRAPLE</span></div>
+                        <div style={{marginTop:"10px ", alignItems: 'center', marginLeft:"100px", display:"flex", marginBottom:"200px"}}>전체서비스|이용약관|개인정보처리방침|고객센터<span style={{marginLeft:"1150px"}}>(주)TRAPLE</span></div>
                     </div>
                     <div>
                         <img src={alarmBtn} className="chat-img" style={styles.alarmBtnStyle} alt="알람 버튼" onClick={handleChatClick} />
@@ -207,3 +165,4 @@ function Main() {
 }
 
 export default Main;
+

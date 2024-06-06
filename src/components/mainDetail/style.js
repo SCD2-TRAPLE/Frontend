@@ -46,8 +46,11 @@ export const styles = {
         backgroundImage: `url(${menuBox})`
       },
       button:{
+        position:"absolute",
         width: "290.476px",
         height: "46.023px",
+        marginTop:"-10px",
+        marginLeft:"-55px",
         flexShrink: "0",
         borderRadius: "30px",
         background: "var(--c6, #337FED)",

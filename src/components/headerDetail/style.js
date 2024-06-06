@@ -1,6 +1,6 @@
 export const styles = {
     headerBlock:{
-        marginTop:"150px",
+        // marginTop:"150px",
         background: 'white',
         width: '100vw',
         display: 'flex'

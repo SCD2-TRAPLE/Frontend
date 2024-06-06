@@ -47,18 +47,42 @@ function PlaceSelectMain() {
                     >
                             목록으로보기
                     </span>
+                    <div style={{marginLeft:"550px", marginBottom:"50px"}}>
+                        <div style={{
+                                color: '#000',
+                                fontFamily: 'Inter',
+                                fontSize: '20px',
+                                fontStyle: 'normal',
+                                fontWeight: 400,
+                                lineHeight: 'normal'
+                        }}><span style={{
+                            color: '#000',
+                                fontFamily: 'Inter',
+                                fontSize: '20px',
+                                fontStyle: 'normal',
+                                fontWeight: 700,
+                                lineHeight: 'normal'
+                        }}>→ 여행지</span> 정보에서 더 많은 여행지 보러가기!</div>
+                        <div style={{
+                            marginTop:"20px",
+                            color: '#000',
+                            fontFamily: 'Inter',
+                            fontSize: '20px',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            lineHeight: 'normal'
+                        }}><span style={{
+                            color: '#000',
+                            fontFamily: 'Inter',
+                            fontSize: '20px',
+                            fontStyle: 'normal',
+                            fontWeight: 700,
+                            lineHeight: 'normal'
+                        }}>→ 트래플 챗</span>으로 현지 정보 확인하러 가기!</div>
+                    </div>
                     <ImageSlider photos={commonImg}></ImageSlider>
                 </div>
                 <div style={styles.btnContainer2}>
-                    {/* <span style={{
-                            color: "var(--c9, #949494)",
-                            fontFamily: "Inter",
-                            fontSize: "25px",
-                            fontStyle: "normal",
-                            fontWeight: 400,
-                            lineHeight: "normal",
-                            marginLeft:"800px"
-                    }}>※ 여행할 도시를 선택하세요! (다중 선택 가능, 취소하려면 다시 클릭)</span> */}
                     <button onClick={handleNext} style={styles.nextBtn}>다음</button>
                 </div>
             </div>

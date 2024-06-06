@@ -12,7 +12,6 @@ import th5 from "./th5.svg";
 import th6 from "./th6.svg";
 import Hth1 from "./Hth1.svg"; //호버이미지
 import thChat from "./thChat.svg"; //말풍선
-import thbg from "./thbg.svg";
 
 function PlannerTheme() {
     const navigate = useNavigate();
@@ -40,7 +39,7 @@ function PlannerTheme() {
                         fontWeight: "800",
                         lineHeight: "normal"}}>테마</span>를 골라주세요 !</span>
                 </div>
-                <div style={{backgroundImage:`url(${thbg})`}}>
+                <div style={{background:"#F2F7FA"}}>
                     <div>
                         <span style={styles.subtitle}>테마선택<span style={{marginLeft:"30px"}}>|</span><span style={{color:"#337FED",
                         fontFamily: "Inter",

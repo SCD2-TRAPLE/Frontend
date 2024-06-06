@@ -1,13 +1,9 @@
-import companion1 from "../../companion1.svg";
-import companion2 from "../../companion2.svg";
-
 export const styles = {
     container: {
       background: 'white',
       width: '100vw',
       height: '100vh',
       display: 'flex',
-      backgroundImage:`url(${companion1})`,
       flexDirection: "column",
       backgroundSize: '100%',
       backgroudRepeat: 'no-repeat'
@@ -17,7 +13,6 @@ export const styles = {
       width: '100vw',
       height: '100vh',
       display: 'flex',
-      backgroundImage:`url(${companion2})`,
       flexDirection: "column",
       backgroundSize: '100%',
       backgroudRepeat: 'no-repeat'
@@ -29,6 +24,7 @@ export const styles = {
       margin:"15px 78px 0px 78px"
     },
     nextBtn:{
+      position:"absolute",
       width: "200px",
       height: "65px",
       flexShrink: '0',
@@ -46,7 +42,9 @@ export const styles = {
       background: "#337FED",
       filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
       border:"none",
-      borderRadius:"70px"
+      borderRadius:"70px",
+      marginLeft:"750px",
+      marginTop:"680px"
     },
       title:{
         marginTop: '0px',

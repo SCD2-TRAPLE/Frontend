@@ -8,14 +8,9 @@ import PlaceSelect from './PlaceSelect';
 import PlaceSelectMain from './PlaceSelectMain';
 import PlaceDetail from './PlaceDetail';
 import PlaceDetail2 from './PlaceDetail2';
-import ImageSlider from './ImageSlider';
 import TravlePeriod from './TravlePeriod';
 import PlannerVehicle from './PlannerVehicle';
 import CompanionSelect from './CompanionSelect';
-import Communitycard from './Communitycard';
-import Trapplebox from './Trapplebox';
-import Travlog from './Travlog';
-import VlogDetail from './VlogDetail';
 import Login from './Login';
 import Nickname from './Nickname';
 import Profile from './Profile';
@@ -23,8 +18,9 @@ import Auth from './Auth';
 import TravlePeriod2 from './TravlePeriod2';
 import PlannerTheme from './PlannerTheme';
 import PlannerThemeDetail from './PlannerThemeDetail';
-import CompanionSelect2 from './CompanionSelect2';
-import TravleTogether from './TravleTogether';
+import PlannerFood from './PlannerFood';
+import Loading from "./Loading";
+import Aiplanner from './Aiplanenr';
 function App() {
   return (
     <>
@@ -47,14 +43,13 @@ function App() {
               <Route path="/travlePeriod" element={<TravlePeriod />} />
               <Route path="travlePeriod2" element={<TravlePeriod2 />} />
               <Route path="/companionSelect" element={<CompanionSelect />} />
-              <Route path="/companionSelect." element={<CompanionSelect2 />} />
               <Route path="/plannerTheme" element={<PlannerTheme />} />
               <Route path="/plannerThemeDetail" element={<PlannerThemeDetail />} />
+              <Route path="/plannerFood" element={<PlannerFood />} />
               {/* 이동방법 선택 */}
               <Route path="/vehicleSelect" element={<PlannerVehicle />} />
-              <Route path="/travlog" element={<Travlog />} />
-              <Route path="/together" element={<TravleTogether />} />
-              <Route path="/vlogDetail" element={<VlogDetail />} />
+              <Route path="/loading" element={<Loading />}/>
+              <Route path="/aiplanner" element={<Aiplanner />} />
               <Route path="/auth/kakao/login" element={<Auth />} />
               <Route path="*" element={<Nickname />} />
             </Routes>

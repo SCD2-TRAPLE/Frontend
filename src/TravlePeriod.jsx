@@ -32,7 +32,7 @@ function TravlePeriod() {
                     </div>
                 </div>
                 <div>
-                    <button style={{...styles.nextBtn, backgroundColor: isNextButtonActive ? styles.nextBtn.backgroundColor : '#949494'}} 
+                    <button style={{...styles.nextBtn, backgroundColor: isNextButtonActive ? styles.nextBtn.backgroundColor : '#EAEAEA'}} 
                     disabled={!isNextButtonActive}>다음</button>
                     <img src={calendar} onClick={handleCalendarClick} alt="calendar" style={{cursor: 'pointer'}}></img>
                 </div>

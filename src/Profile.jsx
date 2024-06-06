@@ -1,6 +1,6 @@
 //프로필설정페이지
 //@ts-nocheck
-import './modalStyles.css';
+// import './modalStyles.css';
 import defaultProfileImg from './basic.svg';
 import buttonimg from './button.svg';
 import React from "react";
@@ -12,12 +12,10 @@ import Modal from 'react-modal';
 import JSConfetti from "js-confetti";
 
 function Profile() {
-  const [showFireworks, setShowFireworks] = useState(false);
   const jsConfetti = new JSConfetti(); 
   const handleModalClose = () => {
     setModalIsOpen(false);
     navigate('/main');
-    setShowFireworks(false); // 모달 닫힐 때 폭죽 애니메이션 숨기기
   }
   const handleClick = () => {
     setModalIsOpen(false); 
@@ -61,12 +59,7 @@ function Profile() {
     }
   }
 
-  // const handleModalClose = () => {
-  //   navigate('/main'); 
-  // }
-
   return (
-    // 주황색 화면
     <div style={styles.container}>
       {/* 흰 박스 */}
       <div style={styles.whitebox}>
@@ -92,7 +85,6 @@ function Profile() {
               <h4 style={{marginTop:"30%", fontSize:"20px"}}>TRAPLE에 오신 것을</h4>
               <span style={{fontFamily: "Pretendard", fontSize: "20px", fontStyle: "normal", fontWeight: 500, lineHeight: "normal"}}>진심으로 환영합니다!</span>
               <button onClick={handleClick} style={styles.Qbutton}>여행 떠나기</button>
-              {showFireworks && <div className="firework"></div>}
             </div>
           </Modal>
         </div>

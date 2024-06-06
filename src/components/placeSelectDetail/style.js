@@ -111,6 +111,13 @@ export const styles = {
         marginTop:"90px"
       },
       listView: {
+        marginLeft:"5px",
+        color: '#000',
+        fontFamily: 'Inter',
+        fontSize: '20px',
+        fontStyle: 'normal',
+        fontWeight: 400,
+        lineHeight: 'normal',
         cursor: 'pointer',
         transition: 'color 0.3s ease', // 부드러운 색상 변화 효과
     },

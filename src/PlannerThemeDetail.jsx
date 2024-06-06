@@ -10,12 +10,11 @@ import detail2 from "./detail2.svg"; //역사 휴양
 import Hth1 from "./Hth1.svg"; //호버이미지
 import thChat from "./thChat.svg"; //말풍선
 import Dth from "./Dth.svg";
-import thDbg from "./thDbg.svg";
 
 function PlannerTheme() {
     const navigate = useNavigate();
     const handleNext = () => {
-        navigate("/plannerVehicle"); //다음 페이지로 이동
+        navigate("/plannerFood"); //다음 페이지로 이동
     };
     const [currentStep, setCurrentStep] = useState(4); // 현재 단계 상태 추가
     const [clickCount, setClickCount] = useState(0); // 클릭 횟수 상태 추가
@@ -46,7 +45,7 @@ function PlannerTheme() {
                         lineHeight: "normal"
                     }}>테마</span>를 골라주세요 !</span>
                 </div>
-                <div style={{ backgroundImage: `url(${thDbg})` }}>
+                <div style={{ background:"#ABCFFF"}}>
                     <div>
                         <span style={styles.subtitle}>테마선택<span style={{ marginLeft: "30px" }}>|</span><span style={{
                             color: "#337FED",
@@ -66,7 +65,7 @@ function PlannerTheme() {
                         <button
                             style={{
                                 ...styles.nextBtn2,
-                                backgroundColor: clickCount > 0 ? "#337FED" : "#ccc",
+                                backgroundColor: clickCount > 0 ? "#337FED" : "#EAEAEA",
                                 cursor: clickCount > 0 ? "pointer" : "not-allowed"
                             }}
                             onClick={clickCount > 0 ? handleNext : null}

@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import nextBtn from "./nextBtn.svg"; // 다음 버튼 이미지 
-// import gangwon from "./Gangwon-info.svg";
-// import busan from "./Gangwon-info.svg";
-// import seoul from "./Gangwon-info.svg";
-// import jeju from "./Gangwon-info.svg";
+import nextBtn from "./nextBtn.svg"; // 다음 버튼 이미지
 import r1 from "./r1.svg";
 import r2 from "./r2.svg";
 import r3 from "./r3.svg";

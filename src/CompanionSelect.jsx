@@ -29,8 +29,8 @@ function TravlePeriod() {
         <div>
             <Header currentStep={currentStep}/>
             <div style={styles.container} onClick={handleImageClick}>
-                <img src={getDetailImage()} alt="Companion" style={{marginLeft:"100px", width: '1450px'}}/>
-                <div style={{marginLeft:"1230px", marginTop:"50px"}}>
+                <img src={getDetailImage()} alt="Companion" style={{marginLeft:"200px", width: '1450px'}}/>
+                <div style={{marginLeft:"1400px", marginTop:"50px"}}>
                         <div style={{
                                 color: '#000',
                                 fontFamily: 'Inter',

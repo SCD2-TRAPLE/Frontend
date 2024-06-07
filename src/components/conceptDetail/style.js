@@ -8,7 +8,7 @@ export const styles = {
       },
     nextBtn:{
         marginTop:"35px",
-        marginLeft:"40%",
+        
         width: "200px",
         height: "65px",
         flexShrink: '0',
@@ -54,7 +54,7 @@ export const styles = {
         borderRadius:"30px"
       },
       nextBtn3:{
-        marginTop:"100px",
+        marginTop:"20px",
         marginBottom:"50px",
         marginLeft:"43%",
         width: "200px",
@@ -116,7 +116,7 @@ export const styles = {
       },
       th:{
         cursor: "pointer",
-        margin: '0 18px',
+        margin: '0 33px',
         marginBottom:"100px"
       },
       detailBox:{

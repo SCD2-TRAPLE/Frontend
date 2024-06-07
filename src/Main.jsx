@@ -88,7 +88,7 @@ function Main() {
         <div>
             <HomeHeader />
             <div className="home-screen" style={styles.container}>
-                <div id="main-title" style={{ width: '100%', height: '100vh', backgroundImage: `url(${homeImg})`, backgroundRepeat: 'no-repeat' }}>
+                <div id="main-title" style={{ width: '100%', backgroundImage: `url(${homeImg})`, backgroundRepeat: 'no-repeat' }}>
                     <div style={styles.mainText}>
                         기분좋은 여행의<br />첫 걸음, Traple 🏝️
                     </div>
@@ -98,7 +98,7 @@ function Main() {
                     <div style={{ marginTop: "48px", marginLeft: "980px" }}>
                         <img src={menuBox} />
                     </div>
-                    <div style={{ marginTop: "-125px", marginLeft: "1133px" }}>
+                    <div style={{ marginTop: "-125px", marginLeft: "1133px", marginBottom:"100px" }}>
                         <button onClick={handleNext} style={styles.button}>AI Planner 바로 이용하기</button>
                     </div>
 
@@ -144,7 +144,7 @@ function Main() {
                     </div> */}
                     <div>
                         <img src={Line_31} style={{marginTop:"170px"}}></img>
-                        <div style={{marginTop:"10px ", alignItems: 'center', marginLeft:"100px", display:"flex", marginBottom:"200px"}}>전체서비스|이용약관|개인정보처리방침|고객센터<span style={{marginLeft:"1150px"}}>(주)TRAPLE</span></div>
+                        <div style={{marginTop:"10px ", alignItems: 'center', marginLeft:"100px", display:"flex", marginBottom:"20px"}}>전체서비스|이용약관|개인정보처리방침|고객센터<span style={{marginLeft:"1150px"}}>(주)TRAPLE</span></div>
                     </div>
                     <div>
                         <img src={alarmBtn} className="chat-img" style={styles.alarmBtnStyle} alt="알람 버튼" onClick={handleChatClick} />

@@ -25,12 +25,12 @@ const Aiplanner = () => {
     return (
       <div>
         <div>
-            <img src={ai1} style={{marginTop:"-50px", marginLeft:"200px"}} alt="AI Planner"></img>
+            <img src={ai1} alt="AI Planner"></img>
         </div>
         <div>
             <button onClick={handleNext} style={{
-                        marginTop:"-180px",
-                        marginLeft:"330px",
+                        marginTop:"-170px",
+                        marginLeft:"140px",
                         width: "160px",
                         height: "40px",
                         flexShrink: '0',

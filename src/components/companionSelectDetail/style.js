@@ -43,8 +43,8 @@ export const styles = {
       filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
       border:"none",
       borderRadius:"70px",
-      marginLeft:"750px",
-      marginTop:"680px"
+      marginLeft:"850px",
+      marginTop:"700px"
     },
       title:{
         marginTop: '0px',

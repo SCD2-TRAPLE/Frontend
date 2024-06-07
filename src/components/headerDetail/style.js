@@ -10,7 +10,7 @@ export const styles = {
         display: "flex",
         marginRight:"116px",
         marginTop:"30px",
-        marginLeft:"800px",
+        marginLeft:"1000px",
         marginBottom: "38px"
     },
 

@@ -87,7 +87,7 @@ function PlaceSelect() {
                     <img src={icon2} style={{ marginLeft: "5px" }} alt="icon2"></img>
                 </div>
                 <ImageSlider photos={commonPhotos}></ImageSlider>
-                <div style={{marginLeft:"770px", padding:"20px"}}>
+                <div style={{marginLeft:"860px", padding:"20px"}}>
                     <button 
                         onClick={handleNext} 
                         style={{

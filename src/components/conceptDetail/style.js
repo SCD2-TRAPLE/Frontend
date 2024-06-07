@@ -30,9 +30,9 @@ export const styles = {
         borderRadius:"30px"
       },
       nextBtn2:{
-        marginTop:"20px",
-        marginBottom:"20px",
-        marginLeft:"58%",
+        marginTop:"30px",
+        marginBottom:"30px",
+        marginLeft:"56%",
         width: "200px",
         height: "65px",
         flexShrink: '0',
@@ -54,7 +54,7 @@ export const styles = {
         borderRadius:"30px"
       },
       nextBtn3:{
-        marginTop:"20px",
+        marginTop:"50px",
         marginBottom:"50px",
         marginLeft:"43%",
         width: "200px",

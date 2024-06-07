@@ -25,7 +25,7 @@ const Aiplanner = () => {
     return (
       <div>
         <div>
-            <img src={ai1} alt="AI Planner"></img>
+            <img src={ai1} style={{marginLeft:"20px"}} alt="AI Planner"></img>
         </div>
         <div>
             <button onClick={handleNext} style={{
